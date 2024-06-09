@@ -7,8 +7,9 @@
 # General application configuration
 import Config
 
-config :helpdesk,
-  ecto_repos: [Helpdesk.Repo]
+config :helpdesk, :ash_domains, [Helpdesk.Support]
+
+config :helpdesk, ecto_repos: [Helpdesk.Repo]
 
 # Configures the endpoint
 config :helpdesk, HelpdeskWeb.Endpoint,
